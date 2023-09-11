@@ -1,6 +1,6 @@
 # React-Query SSR (prefetchQuery vs fetchQuery)
 
-- Next js의 SSR (getServerSideProps) 에서 React-Query 사용하고 싶다면 _app.tsx 파일의 클라이언트 측에서 아래와 같이 Hydrate 으로 묶으면 되고,
+- Next js의 SSR (getServerSideProps) 에서 React-Query 사용하고 싶다면 \_app.tsx 파일의 클라이언트 측에서 아래와 같이 Hydrate 으로 묶으면 되고,
 
 ```
 export default function MyApp({ Component, pageProps }) {
@@ -38,7 +38,7 @@ export async function getStaticProps() {
 
 - 여기서 getServerSideProps 부분에서 prefetchQuery 를 사용할 수도 있고, fetchQuery 를 사용할 수도 있습니다. 이 둘의 차이는 다음과 같다고 합니다.
   - queryClient.prefetchQuery: prefetchQuery is an asynchronous method that can be used to prefetch a query before it is needed or rendered with useQuery and friends. The method works the same as fetchQuery except that it will not throw or return any data.
-  - prefetchQuery 는 query의 값이 화면에 렌더링되기 이전 호출할 때 사용하는 것으로,  fetchQuery 와 같은 방식으로 작동하는데 리턴 값이 없고 에러를 던지지 않는다는 점에서만 차이가 있습니다.
+  - prefetchQuery 는 query의 값이 화면에 렌더링되기 이전 호출할 때 사용하는 것으로, fetchQuery 와 같은 방식으로 작동하는데 리턴 값이 없고 에러를 던지지 않는다는 점에서만 차이가 있습니다.
   - queryClient.fetchQuery: fetchQuery is an asynchronous method that can be used to fetch and cache a query. Use the prefetchQuery method if you just want to fetch a query without needing the result.
   - fetchQuery 는 비동기 함수로 fetch하고 cache하는 데에 사용하는 것으로, 쿼리의 결과가 필요하지 않으면 prefetchQuery 를 쓰면 됩니다.
 
@@ -51,4 +51,3 @@ export async function getStaticProps() {
 - 출처
   - [SSR | TanStack Query Docs](https://tanstack.com/query/v4/docs/react/guides/ssr#using-hydration)
   - [QueryClient | TanStack Query Docs](https://tanstack.com/query/v4/docs/react/reference/QueryClient#queryclientfetchquery)
-

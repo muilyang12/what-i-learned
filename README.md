@@ -14,3 +14,5 @@
 ### [3. .bat, .sh 스크립트 파일](https://github.com/muilyang12/what_i_studied/blob/main/03-script-file.md)
 
 ### [4. HTTP 보안 헤더](https://github.com/muilyang12/what_i_studied/blob/main/04-http-security-header.md)
+
+### [5. Strict-Transport-Security 헤더](https://github.com/muilyang12/what_i_studied/blob/main/05-strict-transport-security-header.md)

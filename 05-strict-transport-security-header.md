@@ -12,7 +12,7 @@
 
 <br />
 
-<img src="" width=750 />
+<img src="https://github.com/muilyang12/what_i_studied/assets/78548830/95b1d67c-65ff-453d-9955-a93792e00f8b" width=750 />
 
 <br />
 <br />
@@ -31,7 +31,7 @@
 
 <br />
 
-<img src="" width=750 />
+<img src="https://github.com/muilyang12/what_i_studied/assets/78548830/1d0a8e71-01e5-4960-b4ba-b87d47b92575" width=750 />
 
 <br />
 <br />
@@ -40,7 +40,7 @@
 
 <br />
 
-<img src="" width=750 />
+<img src="https://github.com/muilyang12/what_i_studied/assets/78548830/0e672d02-94a2-447f-bfd3-5eed08fe4be0" width=750 />
 
 <br />
 <br />

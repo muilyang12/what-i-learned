@@ -38,6 +38,7 @@ git clone --branch 브랜치명 깃URL ./temp
 tsc --project tsconfig.json
 mv -f ./temp-compiled ./src
 rm -rf ./temp
+
 ```
 
 <br />

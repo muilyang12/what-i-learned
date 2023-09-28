@@ -16,3 +16,9 @@
 ### [4. HTTP 보안 헤더](https://github.com/muilyang12/what_i_studied/blob/main/04-http-security-header.md)
 
 ### [5. Strict-Transport-Security 헤더](https://github.com/muilyang12/what_i_studied/blob/main/05-strict-transport-security-header.md)
+
+### [6. JavaScript 스터디 01](https://github.com/muilyang12/what_i_studied/blob/main/06-javascript-study-01.md)
+
+### [7. JavaScript 스터디 02](https://github.com/muilyang12/what_i_studied/blob/main/07-javascript-study-02.md)
+
+### [8. JavaScript 스터디 03](https://github.com/muilyang12/what_i_studied/blob/main/08-javascript-study-03.md)

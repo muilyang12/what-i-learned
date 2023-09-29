@@ -22,3 +22,5 @@
 ### [7. JavaScript 스터디 02](https://github.com/muilyang12/what_i_studied/blob/main/07-javascript-study-02.md)
 
 ### [8. JavaScript 스터디 03](https://github.com/muilyang12/what_i_studied/blob/main/08-javascript-study-03.md)
+
+### [9. TypeScript override 키워드](https://github.com/muilyang12/what_i_studied/blob/main/09-typescrpt-override.md)

@@ -40,3 +40,6 @@ class SpecializedComponent extends SomeComponent {
 ```
 
 <br />
+
+- 출처
+  - [TypeScript 4.3 번역](https://velog.io/@hustle-dev/TypeScript-4.3-%EB%B2%88%EC%97%AD)

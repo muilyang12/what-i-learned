@@ -1,4 +1,4 @@
-# Raact Virtual DOM
+# React Virtual DOM
 
 - Virtual DOM은 SPA에 의해 DOM을 다루는 것이 복잡해짐에 따라 보다 효율적인 DOM 렌더링을 위해 등장한 개념입니다. Virtual DOM은 DOM을 복제한 자바스크립트 객체인데, class나 style 등의 attribute만 가지고 DOM API 메서드는 포함하고 있지 않은 조금 더 가벼운 DOM입니다.
 

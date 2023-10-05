@@ -27,4 +27,4 @@
 
 ### [10. Git Merge Strategy](https://github.com/muilyang12/what_i_studied/blob/main/10-git-merge-strategy.md)
 
-### [11. Raact Virtual DOM](https://github.com/muilyang12/what_i_studied/blob/main/11-react-virtual-dom.md)
+### [11. React Virtual DOM](https://github.com/muilyang12/what_i_studied/blob/main/11-react-virtual-dom.md)

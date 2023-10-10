@@ -28,3 +28,7 @@
 ### [10. Git Merge Strategy](https://github.com/muilyang12/what_i_studied/blob/main/10-git-merge-strategy.md)
 
 ### [11. React Virtual DOM](https://github.com/muilyang12/what_i_studied/blob/main/11-react-virtual-dom.md)
+
+### [12. 브라우저 렌더링 과정](https://github.com/muilyang12/what_i_studied/blob/main/12-browser-rendering.md)
+
+### [13. What happens when you type google.com in your browser](https://github.com/muilyang12/what_i_studied/blob/main/13-what-happens-when-type-in-browser.md)

@@ -32,3 +32,5 @@
 ### [12. 브라우저 렌더링 과정](https://github.com/muilyang12/what_i_studied/blob/main/12-browser-rendering.md)
 
 ### [13. What happens when you type google.com in your browser](https://github.com/muilyang12/what_i_studied/blob/main/13-what-happens-when-type-in-browser.md)
+
+### [14-react-css-animation-rerender.md](https://github.com/muilyang12/what_i_studied/blob/main/14-react-css-animation-rerender.md)

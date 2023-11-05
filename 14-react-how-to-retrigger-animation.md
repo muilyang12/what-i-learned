@@ -21,7 +21,7 @@ export default function Card({ cardText }) {
           @keyframes come-up {
             .....
           }
-          
+
           .card-wrapper {
             animation: come-up 0.5s;
           }
@@ -58,7 +58,6 @@ export default function Card({ cardText }) {
 <br />
 <br />
 
- 
 - 출처
-  - [How to trigger a CSS animation on EVERY TIME a react component re-renders]([https://www.youtube.com/watch?v=7RiMu2DQrb4&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC](https://stackoverflow.com/questions/63186710/how-to-trigger-a-css-animation-on-every-time-a-react-component-re-renders)https://stackoverflow.com/questions/63186710/how-to-trigger-a-css-animation-on-every-time-a-react-component-re-renders)
-  - [[React.js] Virtual DOM 가상 돔]([https://www.frontendinterviewhandbook.com/coding/javascript-utility-function](https://velog.io/@minbr0ther/React.js-Virtual-DOM-%EA%B0%80%EC%83%81-%EB%8F%94)https://velog.io/@minbr0ther/React.js-Virtual-DOM-%EA%B0%80%EC%83%81-%EB%8F%94)
+  - [How to trigger a CSS animation on EVERY TIME a react component re-renders](<[https://www.youtube.com/watch?v=7RiMu2DQrb4&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC](https://stackoverflow.com/questions/63186710/how-to-trigger-a-css-animation-on-every-time-a-react-component-re-renders)https://stackoverflow.com/questions/63186710/how-to-trigger-a-css-animation-on-every-time-a-react-component-re-renders>)
+  - [[React.js] Virtual DOM 가상 돔](<[https://www.frontendinterviewhandbook.com/coding/javascript-utility-function](https://velog.io/@minbr0ther/React.js-Virtual-DOM-%EA%B0%80%EC%83%81-%EB%8F%94)https://velog.io/@minbr0ther/React.js-Virtual-DOM-%EA%B0%80%EC%83%81-%EB%8F%94>)

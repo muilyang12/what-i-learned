@@ -36,3 +36,5 @@
 ### [13. What happens when you type google.com in your browser](https://github.com/muilyang12/what_i_studied/blob/main/13-what-happens-when-type-in-browser.md)
 
 ### [14. 리액트 애니메이션 여러번 호출하기](https://github.com/muilyang12/what_i_studied/blob/main/14-react-how-to-retrigger-animation.md)
+
+### [15. 파일 다루기](https://github.com/muilyang12/what_i_studied/blob/main/15-how-to-handle-file.md)

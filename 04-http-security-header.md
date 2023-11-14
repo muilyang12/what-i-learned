@@ -1,18 +1,24 @@
-# HTTP 보안 헤더
+# HTTP Security Header
 
-### X-XSS-Protection 헤더
+### X-XSS-Protection header
 
 - X-XSS-Protection HTTP 헤더는 XSS 공격을 감지 했을 때 브라우저가 페이지 로드를 중지하도록 하는 헤더입니다. 최신 브라우저에서는 Inline Javascript 사용을 못하게 하는 CSP (Content-Security-Policy) 보호기능이 있는데, 해당 기능을 지원하지 않는 구형 웹브라우저에서 사용자를 보호 할수 있는 기능을 제공할 수 있습니다.
+- The X-XSS-Protection HTTP header is a header that instructs the browser to stop loading the page when an XSS attack is detected. Modern browsers have a Content-Security-Policy (CSP) feature that prevents the use of inline Javascript, but for older web browsers that do not support this feature, it can provide a function to protect users.
   - 1; mode=block: XSS 필터링을 사용합니다. 공격이 탐지되면 페이지 렌더링을 중단합니다.
+  - 1; mode=block: Enables XSS filtering. The page rendering is stopped if an attack is detected.
   - 1: 공격이 감지되면 브라우저가 안전하지 않은 영역을 제거한 후 렌더링 합니다.
+  - 1: The browser will render the page after removing the unsafe parts if an attack is detected.
 
 <br />
 
-### X-Frame-Options 헤더
+### X-Frame-Options header
 
 - X-Frame-Options HTTP 헤더는 해당 페이지를 frame, iframe, object 태그들에서 렌더링할 수 있는지 여부를 나타내는데 사용됩니다. 사이트 내 콘텐츠들이 다른 사이트에 포함되지 않도록 하여 Clickjacking 공격을 막기 위해 이 헤더를 사용합니다.
+- The X-Frame-Options HTTP header is used to indicate whether a page can be rendered in a frame, iframe, or object tag. This header is used to prevent the content of a site from being embedded within other sites, thereby protecting against Clickjacking attacks.
   - deny: 어떠한 사이트에서도 frame 내의 src로 포함될 수 없습니다.
+  - deny: The page cannot be included as the source for a frame in any site.
   - sameorigin: 동일한 Origin을 가진 사이트 내 frame 에서는 보여질 수 있습니다.
+  - sameorigin: The page can be displayed in a frame on the same origin site.
 
 <br />
 

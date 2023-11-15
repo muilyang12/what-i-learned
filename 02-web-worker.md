@@ -48,6 +48,6 @@
 
 <br />
 
-- 출처
+- Reference
   - [Using Web Workers - Web APIs|MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
   - [브라우저 Web Worker 다루기 with 오피스 문서 텍스트 추출 및 암호해제](https://tech.kakao.com/2021/09/02/web-worker/)

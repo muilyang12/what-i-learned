@@ -27,11 +27,13 @@
 
 ---
 
-- Strict-Transport-Security 헤더를 세팅한 사이트인 네이버를 http://www.naver.com URL을 사용하여 의도적으로 HTTP를 사용하여 접근 시 위와 같은 순서로 상태코드가 나오게 됩니다.
+- Strict-Transport-Security 헤더를 세팅한 사이트인 네이버를 http://www.naver.com URL을 사용하여 의도적으로 HTTP로 접근하며 상태코드를 살펴보려 합니다. 결과적으로는 위의 그림에서 묘사한 순서와 거의 똑같은 순서로 상태코드가 나오게 됩니다.
+- I intend to intentionally access the site Naver, which has set the Strict-Transport-Security header, using the URL http://www.naver.com with HTTP to examine the status codes. As a result, the sequence of status codes will appear almost the same as the sequence depicted in the above figure.
 
 <br />
 
-- 시크릿 모드 브라우저를 사용하여 첫 번째로 HTTP를 명시한 네이버의 URL (http://www.naver.com) 에 접근 시 아래와 같이 302 Moved Temporarily 가 나오며 HTTPS 요청으로 강제하게 됩니다. (두 번째 www.naver.com이 HTTPS 요청입니다.)
+- 첫 번째로 HTTP를 명시한 네이버의 URL (http://www.naver.com) 에 접근 시 아래와 같이 302 Moved Temporarily 가 나오며 HTTPS 요청으로 강제하게 됩니다. (두 번째 www.naver.com이 HTTPS 요청입니다.)
+- When you first access Naver's URL specified with HTTP (http://www.naver.com), you get a 302 Moved Temporarily response, which forces the request to HTTPS (the second www.naver.com is the HTTPS request).
 
 <br />
 
@@ -41,6 +43,7 @@
 <br />
 
 - 그 후 같은 브라우저로 다시 HTTP를 명시한 네이버의 URL (http://www.naver.com) 에 접근하면 아래와 같이 307 Internal Redirect 상태코드를 받으며 HTTPS 요청으로 리다이렉트 됩니다. 위의 순서도와 일치하죠.
+- After that, if you access Naver's URL specified with HTTP (http://www.naver.com) again using the same browser, you will receive a 307 Internal Redirect status code, and the request will be redirected to HTTPS. This matches the sequence described above.
 
 <br />
 
@@ -50,6 +53,7 @@
 <br />
 
 - 이와 달리 Strict-Transport-Security 헤더가 설정되지 않은 사이트에 HTTP 요청으로 접근하면 여러 번 반복 접근하여도 항상 301 Moved Permanently 상태코드가 나오며 리다이렉트 됩니다. 물론 캐시가 되기에 “307 Moved Permanently (from disk cache)” 상태 코드가 나오고 있습니다. (어찌 보면 이것도 브라우저 단에서 막은 거라고 볼 수도 있기는 합니다.)
+- Conversely, if you access a site that has not set the Strict-Transport-Security header with an HTTP request, you will always receive a 301 Moved Permanently status code with repeated accesses, redirecting you each time. Of course, because it is cached, you might see the status code "307 Moved Permanently (from disk cache)." (In a way, this can also be seen as being blocked by the browser.)
 
 <br />
 

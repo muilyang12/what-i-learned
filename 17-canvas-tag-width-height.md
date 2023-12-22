@@ -27,7 +27,11 @@ canvas.width = canvas.clientWidth * window.devicePixelRatio;
 canvas.height = canvas.clientHeight * window.devicePixelRatio;
 ```
 
+<br />
+
 - window.devicePixelRatio 를 곱하고 나누는 것의 의미는 [16-device-pixel-ratio.md](https://github.com/muilyang12/what_i_studied/blob/main/16-device-pixel-ratio.md?plain=1)에서 설명한 내용을 보시면 알 수 있습니다.
+
+<br />
 
 - 출처
   - [Canvas width and height in HTML5](https://stackoverflow.com/questions/4938346/canvas-width-and-height-in-html5)

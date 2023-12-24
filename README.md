@@ -38,3 +38,9 @@
 ### [14. 리액트 애니메이션 여러번 호출하기](https://github.com/muilyang12/what_i_studied/blob/main/14-react-how-to-retrigger-animation.md)
 
 ### [15. 파일 다루기](https://github.com/muilyang12/what_i_studied/blob/main/15-how-to-handle-file.md)
+
+### [16. Device Pixel Ratio](https://github.com/muilyang12/what_i_studied/blob/main/16-device-pixel-ratio.md)
+
+### [17. Canvas 태그의 width, height](https://github.com/muilyang12/what_i_studied/blob/main/17-canvas-tag-width-height.md)
+
+### [18. Texture Mapping](https://github.com/muilyang12/what_i_studied/blob/main/18-texture-mapping.md)

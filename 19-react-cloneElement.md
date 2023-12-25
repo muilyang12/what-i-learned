@@ -42,3 +42,96 @@ export default function List({ children }) {
 ```
 
 <br />
+<br />
+
+- 위의 예시에서 cloneElement 를 사용하는 방식을 대체하기 위하여 공식 문서에서는 아래의 세 가지 방식을 추천합니다.
+
+#### 1. Passing data with a render prop
+- List의 사용처에서 Row를 직접 사용하는 것이 아닌 Row를 리턴하는 renderItem 함수를 통하여 Row를 렌더링하는 방식입니다.
+
+```
+<List
+  items={products}
+  renderItem={(product, isHighlighted) =>
+    <Row
+      key={product.id}
+      title={product.title}
+      isHighlighted={isHighlighted}
+    />
+  }
+/>
+```
+
+```
+export default function List({ items, renderItem }) {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  
+  return (
+    <div className="List">
+      {items.map((item, index) => {
+        const isHighlighted = index === selectedIndex;
+        return renderItem(item, isHighlighted);
+      })}
+      
+// .....
+```
+
+<br />
+
+#### 2. Passing data through context
+- Row에 넘겨주고자 하는 값을 Context를 사용하여 넘기는 방식입니다.
+
+```
+export default function List({ items, renderItem }) {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  
+  return (
+    <div className="List">
+      {items.map((item, index) => {
+        const isHighlighted = index === selectedIndex;
+        
+        return (
+          <HighlightContext.Provider key={item.id} value={isHighlighted}>
+            {renderItem(item)}
+          </HighlightContext.Provider>
+        );
+      })}
+      
+// .....
+```
+
+```
+export default function Row({ title }) {
+  const isHighlighted = useContext(HighlightContext);
+  
+  // .....
+```
+
+<br />
+
+#### 3. Extracting logic into a custom Hook
+- List  컴포넌트 없이 Row를 직접 사용하는 방식입니다. (개인적인 의견으로 이것은 좀 아쉬운 방법인 것 같습니다.)
+
+```
+export default function App() {
+  const [selected, onNext] = useList(products);
+
+  return (
+    <div className="List">
+      {products.map(product =>
+        <Row
+          key={product.id}
+          title={product.title}
+          isHighlighted={selected === product}
+        />
+      )}
+      <hr />
+      <button onClick={onNext}>
+        Next
+      </button>
+    </div>
+  );
+}
+```
+
+<br />

@@ -135,3 +135,65 @@ export default function App() {
 ```
 
 <br />
+
+<hr />
+
+- 유명한 오픈소스 라이브러리에서는 어떠한 방법을 사용하는지 참조하고자 MUI Material 이나 MUI Base 의 소스코드를 한 번 분석해보았습니다.
+
+<br />
+
+- MUI Material 의 경우 Pitfall 을 나타내고 있는 React.Children API 와 React.cloneElement 를 사용하는 것을 알 수 있습니다. (Tabs 컴포넌트 기준으로 확인하였습니다.)
+
+```
+// .....
+
+const children = React.Children.map(childrenProp, (child) => {
+    if (!React.isValidElement(child)) {
+      return null;
+    }
+
+    // .....
+    
+    return React.cloneElement(child, {
+      fullWidth: variant === 'fullWidth',
+      indicator: selected && !mounted && indicator,
+      selected,
+      selectionFollowsFocus,
+      onChange,
+      textColor,
+      value: childValue,
+      ...(childIndex === 1 && value === false && !child.props.tabIndex ? { tabIndex: 0 } : {}),
+    });
+  });
+}
+
+// .....
+```
+
+<br />
+
+- MUI Base 의 경우, 두 번째 방법 (Context를 사용한 방법) 을 쓰고 있습니다. (Tabs 컴포넌트 기준으로 확인하였습니다.)
+
+```
+// .....
+
+<TabsRoot {...tabsRootProps}>
+  <TabsProvider value={contextValue}>{children}</TabsProvider>
+</TabsRoot>
+
+// .....
+
+<TabsContext.Provider value={tabsContextValue}>{children}</TabsContext.Provider>
+
+// .....
+```
+
+<br />
+
+- 잘 생각해보면 React.Children 와 React.cloneElement 에 써있는 것은 그냥 Pitfall (위험) 입니다. 그리고 이 둘의 동작을 잘 생각해보면 넘겨 받은 것을 직접 수정하는 방식이다보니 자유도가 엄청나게 높고요. '피하는 편을 추천하되 잘 사용할 자신이 있으면 써도 되는 것' 정도로 받아들이면 되는 것 아닌가 싶습니다. 그렇기에 MUI Material 의 개발자들은 이 방식을 여전히 사용하고 있는 것이고요.
+
+- 출처
+  - [cloneElement - React](https://react.dev/reference/react/cloneElement)
+  - [Github - MUI Material Tabs.js](https://github.com/mui/material-ui/blob/master/packages/mui-material/src/Tabs/Tabs.js)
+  - [Github - MUI Base TabsProvider.tsx](https://github.com/mui/material-ui/blob/master/packages/mui-base/src/Tabs/Tabs.tsx)
+  - [Github - MUI Base Tabs.tsx](https://github.com/mui/material-ui/blob/master/packages/mui-base/src/useTabs/TabsProvider.tsx)

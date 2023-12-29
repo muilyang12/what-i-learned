@@ -28,8 +28,8 @@
 
 - main property
   - 해당 패키지를 npm에서 설치하여 사용할 때, 프로젝트 내의 어떤 파일이 불러와질지를 지정하는 데에 사용하는 속성입니다.
-  - 아래와 같이 recoil을 import할 경우 main 옵션에 연결한 파일이 불러와지게 됩니다.
-  - 만약 webpack이나 babel에 export 경로로 lib 디렉토리나 dist 디렉토리를 설정한 경우 해당 디렉토리 내의 파일을 main 옵션에 지정해주어야 합니다.
+  - 아래와 같이 recoil을 import 할 경우 main 옵션에 연결한 파일이 불러와지게 됩니다.
+  - 만약 webpack 이나 babel 에 export 경로로 lib 디렉토리나 dist 디렉토리를 설정한 경우 해당 디렉토리 내의 파일을 main 옵션에 지정해주어야 합니다.
   - 명시하지 않을 경우 기본적으로 프로젝트의 최상위 디렉토리의 index.js 파일이 사용됩니다.
 
 <br />
@@ -45,3 +45,42 @@ import recoil from "recoil";
 ```
 
 <br />
+
+- types property
+  - 타입스크립트로 개발한 후 자바스크립트로 컴파일하여 발행하는 프로젝트의 경우, 해당 프로젝트에서 정의하고 있는 타입 정보를 담은 파일의 위치를 지정하는 데에 사용하는 속성입니다.
+
+<br />
+
+```
+{
+  "types": "index.d.ts",
+}
+```
+
+- private property
+  - 해당 프로젝트가 npm 패키지 저장소에 발행되어도 되는지의 여부를 지정하는 데에 사용하는 속성입니다.
+  - 기본값이 false 이기에 따로 명시하지 않으면 해당 프로젝트가 실수로 npm 패키지 저장소로 업로드되는 사고가 발생할 수 있습니다. 그렇기에 npm 패키지 저장소로 올리면 안 되는 프로젝트의 경우 private 필드의 값을 반드시 true로 설정하는 것이 권장됩니다.
+
+<br />
+
+- homepage property
+  - 해당 프로젝트의 홈페이지나 문서 페이지의 URL을 설정하는 데에 사용하는 속성입니다.
+  - 설정할 경우 npm docs 명령어를 통하여 간편하게 해당 URL (홈페이지) 를 열어볼 수 있습니다.
+  - 또한, npm 배포 시 homepage 옵션에 설정한 URL이 npm 의 Homepage 항목에 표현됩니다.
+  - recoil 의 경우 package.json 파일에 homepage 속성이 없어서 react 의 package.json 파일을 참고하였습니다.
+
+<br />
+
+```
+{
+  "homepage": "https://reactjs.org/",
+}
+```
+
+<br />
+
+<img src="https://github.com/muilyang12/what_i_studied/assets/78548830/96164d52-cb6d-4b1c-a92c-f064a6c5bada" width=750 />
+
+<br />
+<br />
+

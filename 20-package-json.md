@@ -64,7 +64,7 @@ import recoil from "recoil";
 <br />
 
 - homepage property
-  - 해당 프로젝트의 홈페이지나 문서 페이지의 URL을 설정하는 데에 사용하는 속성입니다.
+  - 해당 프로젝트의 홈페이지나 문서 페이지 URL을 설정하는 데에 사용하는 속성입니다.
   - 설정할 경우 npm docs 명령어를 통하여 간편하게 해당 URL (홈페이지) 를 열어볼 수 있습니다.
   - 또한, npm 배포 시 homepage 옵션에 설정한 URL이 npm 의 Homepage 항목에 표현됩니다.
   - recoil 의 경우 package.json 파일에 homepage 속성이 없어서 react 의 package.json 파일을 참고하였습니다.
@@ -84,3 +84,36 @@ import recoil from "recoil";
 <br />
 <br />
 
+- repository property
+  - 해당 프로젝트의 코드 저장소 URL을 설정하는 데에 사용하는 속성입니다.
+  - 설정할 경우 npm repo 명령어를 통하여 간편하게 해당 URL 을 열어볼 수 있습니다.
+  - 또한, npm 배포 시 repository 옵션에 설정한 URL이 npm 의 Repository 항목에 표현됩니다.
+
+<br />
+
+```
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/react.git",
+    "directory": "packages/react"
+  },
+}
+```
+
+<br />
+
+<img src="https://github.com/muilyang12/what_i_studied/assets/78548830/241bebf6-e09b-4c4d-9a71-84059721bf7a" width=750 />
+
+<br />
+<br />
+
+- files property
+  - npm 배포 시에 프로젝트 내 특정 파일만 발행할 패키지에 포함하고 싶은 경우, 포함할 파일을 지정하는 데에 사용하는 속성입니다.
+
+<br />
+ 
+- license property
+  - 해당 프로젝트의 라이선스를 표시하는 데에 사용하는 속성입니다.
+
+<br />

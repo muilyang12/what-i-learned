@@ -4,7 +4,7 @@
   - Physical pixels: 단말이 실제로 표현할 수 있는 물리적인 화소(pixel) 기본 단위.
   - Logical pixels: HTML/CSS에서 논리적으로 표현할 수 있는 화소 기본 단위.
 
-<br />
+<br /> 
  
 - DPR (device-pixel-ratio): The ratio between physical pixels and logical pixels
   - 뷰포트는 CSS 픽셀을 단위로 가지지만, 기기는 물리적 픽셀을 단위로 가집니다.

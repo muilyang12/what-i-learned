@@ -10,7 +10,7 @@
 
 ```
 canvas.width = 400;
-canvas.height = 300; 
+canvas.height = 300;
 canvas.style.width = '800px';
 canvas.style.height = '600px';
 ```

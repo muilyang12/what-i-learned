@@ -44,3 +44,7 @@
 ### [17. Canvas 태그의 width, height](https://github.com/muilyang12/what_i_studied/blob/main/17-canvas-tag-width-height.md)
 
 ### [18. Texture Mapping](https://github.com/muilyang12/what_i_studied/blob/main/18-texture-mapping.md)
+
+### [19. React.cloneElement](https://github.com/muilyang12/what_i_studied/blob/main/19-react-cloneElement.md)
+
+### [20. Package.json setting](https://github.com/muilyang12/what_i_studied/blob/main/20-package-json.md)

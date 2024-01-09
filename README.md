@@ -9,42 +9,26 @@
 
 ## 목차
 
-### [1. SSR에서 사용하는 React Query (prefetchQuery vs fetchQuery)](https://github.com/muilyang12/what_i_studied/blob/main/01-react-query-ssr.md)
+### [1. React-Query SSR (prefetchQuery vs fetchQuery)](https://github.com/muilyang12/what_i_studied/blob/main/01-react-query-ssr.md)
 
-### [2. Web Worker](https://github.com/muilyang12/what_i_studied/blob/main/02-web-worker.md)
+### [2. Automation with a script file (.bat, .cmd, .sh file)](https://github.com/muilyang12/what_i_studied/blob/main/02-automation-with-a-script-file.md)
 
-### [3. .bat, .sh 스크립트 파일](https://github.com/muilyang12/what_i_studied/blob/main/03-script-file.md)
+### [3. HTTP Security Header](https://github.com/muilyang12/what_i_studied/blob/main/03-http-security-header.md)
 
-### [4. HTTP 보안 헤더](https://github.com/muilyang12/what_i_studied/blob/main/04-http-security-header.md)
+### [4. Strict-Transport-Security header](https://github.com/muilyang12/what_i_studied/blob/main/04-strict-transport-security-header.md)
 
-### [5. Strict-Transport-Security 헤더](https://github.com/muilyang12/what_i_studied/blob/main/05-strict-transport-security-header.md)
+### [5. Git Merge Strategy](https://github.com/muilyang12/what_i_studied/blob/main/05-git-merge-strategy.md)
 
-### [6. JavaScript 스터디 01](https://github.com/muilyang12/what_i_studied/blob/main/06-javascript-study-01.md)
+### [6. How to retrigger animation in React](https://github.com/muilyang12/what_i_studied/blob/main/06-react-how-to-retrigger-animation.md)
 
-### [7. JavaScript 스터디 02](https://github.com/muilyang12/what_i_studied/blob/main/07-javascript-study-02.md)
+### [8. Device Pixel Ratio in Canvas](https://github.com/muilyang12/what_i_studied/blob/main/08-device-pixel-ratio-in-canvas.md)
 
-### [8. JavaScript 스터디 03](https://github.com/muilyang12/what_i_studied/blob/main/08-javascript-study-03.md)
+### [9. Texture Mapping](https://github.com/muilyang12/what_i_studied/blob/main/09-texture-mapping.md)
 
-### [9. TypeScript override 키워드](https://github.com/muilyang12/what_i_studied/blob/main/09-typescrpt-override.md)
+### [10. React.cloneElement()](https://github.com/muilyang12/what_i_studied/blob/main/10-react-cloneElement.md)
 
-### [10. Git Merge Strategy](https://github.com/muilyang12/what_i_studied/blob/main/10-git-merge-strategy.md)
+### [11. TypeScript override keyword](https://github.com/muilyang12/what_i_studied/blob/main/11-typescrpt-override.md)
 
-### [11. React Virtual DOM](https://github.com/muilyang12/what_i_studied/blob/main/11-react-virtual-dom.md)
+### [12. How to handle file in JS](https://github.com/muilyang12/what_i_studied/blob/main/12-how-to-handle-file-in-js.md)
 
-### [12. 브라우저 렌더링 과정](https://github.com/muilyang12/what_i_studied/blob/main/12-browser-rendering.md)
-
-### [13. What happens when you type google.com in your browser](https://github.com/muilyang12/what_i_studied/blob/main/13-what-happens-when-type-in-browser.md)
-
-### [14. 리액트 애니메이션 여러번 호출하기](https://github.com/muilyang12/what_i_studied/blob/main/14-react-how-to-retrigger-animation.md)
-
-### [15. 파일 다루기](https://github.com/muilyang12/what_i_studied/blob/main/15-how-to-handle-file.md)
-
-### [16. Device Pixel Ratio](https://github.com/muilyang12/what_i_studied/blob/main/16-device-pixel-ratio.md)
-
-### [17. Canvas 태그의 width, height](https://github.com/muilyang12/what_i_studied/blob/main/17-canvas-tag-width-height.md)
-
-### [18. Texture Mapping](https://github.com/muilyang12/what_i_studied/blob/main/18-texture-mapping.md)
-
-### [19. React.cloneElement](https://github.com/muilyang12/what_i_studied/blob/main/19-react-cloneElement.md)
-
-### [20. Package.json setting](https://github.com/muilyang12/what_i_studied/blob/main/20-package-json.md)
+### [13. Implementing SSR with React.js and Express.js](https://github.com/muilyang12/what_i_studied/blob/main/13-implementing-ssr-with-react-and-express.md)

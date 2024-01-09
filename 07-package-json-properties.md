@@ -1,7 +1,15 @@
-# Package.json setting
+# Package.json properties
 
-- Meta의 recoil의 package-for-release.json 파일을 기준으로 작성하려 합니다.
+- package.json 내 항목들의 경우 create-next-app에서 만들어 준 항목을 기반으로 scripts와 dependencies에 대한 항목만 일부 추가하면서 사용하고 있었습니다. 문득 각각에 대해 궁금한 부분이 생겨서 간단하게 한 번 조사를 해보았습니다.
+
+<br />
+
+- Meta의 recoil 레포지토리 package-for-release.json 파일을 기준으로 작성하려 합니다.
   - https://github.com/facebookexperimental/Recoil/blob/c1b97f3a0117cad76cbc6ab3cb06d89a9ce717af/packages/recoil/package-for-release.json
+
+<br />
+
+---
 
 <br />
 

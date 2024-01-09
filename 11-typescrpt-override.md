@@ -1,4 +1,4 @@
-# TypeScript override 키워드
+# TypeScript override keyword
 
 - 저희가 사용하는 외부 유료 라이브러리의 경우 클래스 형태로 작성이 되어 있습니다. 소스 코드를 읽다보니 override라는 키워드를 발견했고, 왜 이 키워드가 필요한 것인지를 간단히 찾아보았습니다.
 

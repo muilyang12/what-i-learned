@@ -1,5 +1,13 @@
 # Texture Mapping
 
+- 업무를 수행하던 과정에서 지형 정보를 텍스처로 엔티티에 입혀야 하는 상황이 있었습니다. 텍스쳐를 사용하기 위해 외부 라이브러리의 예제 코드를 유심히 보았는데 코드를 제대로 이해하기 위해서는 그래픽스에 대한 지식을 일부 기반으로 가지고 있어야 했었습니다. 이해와 적용을 위하여 각각에 대해 조사를 좀 해보았습니다.
+
+<br />
+
+---
+
+<br />
+
 - Diffuse Map
   - 가장 빈번히사용되는 텍스쳐 매칭 방식으로 비트맵 이미지로 3D 형상의 표면을 감싸는 것입니다.
   - The most frequently used texture mapping method. It wraps the bitmap image onto the 3D geometry surface.

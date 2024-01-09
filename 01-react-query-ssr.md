@@ -1,10 +1,10 @@
 # React-Query SSR (prefetchQuery vs fetchQuery)
 
-- 기존에 Nexj.js의 서버 사이드에서 미리 API를 호출한 후 그 결과를 사용하여 서버 사이드 렌더링을 하고 싶은 경우 queryClient.prefetchQuery를 사용하였었습니다. 그런데 prefetchQuery의 경우 리턴 값이 없기에 클라이언트로 넘기기 전에 데이터를 사용하여 무언가 처리를 하고 싶은 경우 Cache를 열어서 꺼내야 했었습니다.
+- Next.js의 서버 사이드에서 미리 API를 호출한 후 그 결과를 사용하여 서버 사이드 렌더링을 하고 싶은 경우 queryClient.prefetchQuery를 사용하였습니다. 그런데 prefetchQuery의 경우 리턴 값이 없기에 클라이언트로 넘기기 전에 가져온 데이터를 사용하여 무언가 처리를 하고 싶은 경우 Cache를 열어서 꺼내야 했었습니다.
 
 <br />
 
-- 이게 좀 아쉽다는 생각이 들어서 React Query의 공식 문서를 조금 유심히 보았고, fetchQuery라는 함수가 있다는 것을 찾을 수 있었습니다.
+- 이게 좀 아쉽다라는 생각이 들어서 React Query의 공식 문서를 조금 유심히 보았고, fetchQuery라는 함수를 통해 원하는 결과를 얻을 수 있다는 것을 알게 되었습니다.
 
 <br />
 
@@ -56,7 +56,7 @@ export async function getStaticProps() {
 
 <br />
 
-- 저의 경우 기존에는 사용할 필요가 없었기에 prefetchQuery로 충분했었는데, 사용해야 하는 상황이 왔기에 fetchQuery를 사용하여 해결하였습니다.
+- 저의 경우 기존에는 가져온 데이터를 사용할 필요가 없었기에 prefetchQuery로 충분했었는데, 사용해야 하는 상황이 왔기에 fetchQuery를 사용하여 해결하였습니다.
 
 <br />
 

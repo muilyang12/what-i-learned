@@ -1,5 +1,11 @@
 # Implementing React SSR with Express.js
 
+- 실제 업무를 수행할 때 서버 사이드 렌더링에 대한 영역은 Next.js가 해주는 부분을 그대로 사용하고 있었습니다. 그런데 문득 어떤 과정을 통해 Next.js가 해주는 것인지 와 React.js가 담당해 주는 영역이 어디까지인 건지에 궁금증이 생겼고 한 번 조사를 해보았습니다.
+
+<br />
+
+---
+
 - 리액트의 공식 문서를 읽다보면 아래와 같은 Server API 들이 존재합니다. Next.js 없이 React.js 와 서버를 사용하여 SSR 을 구현하고자 한다면 이 API 들을 사용하여야 합니다. 실제로 Next.js 내부의 소스 코드에서도 이들을 사용하는 것을 볼 수 있습니다.
 
 <br />
@@ -19,7 +25,7 @@
 <br />
 <br />
 
-  2. SSR: Server API를 사용하여 SSR을 구현한 경우, 최초 로드 시 일부 그려진 html 이 오고 js 파일에 의하여 Hydration 이 이루어지게 됩니다. 말 그대로 Server Side Rendering 인 거죠.
+2. SSR: Server API를 사용하여 SSR을 구현한 경우, 최초 로드 시 일부 그려진 html 이 오고 js 파일에 의하여 Hydration 이 이루어지게 됩니다. 말 그대로 Server Side Rendering 인 거죠.
 
 <br />
 

@@ -1,5 +1,13 @@
 # HTTP Security Header
 
+- 일을 하며 HTTP에 대해 읽다가 헤더 중 보안과 관련된 헤더가 있다는 것을 우연히 읽게 되었습니다. 어떠한 종류의 헤더가 있는지 Next.js의 next.config.js 내 headers 항목을 읽으며 공부한 후 아래 4개의 헤더를 우리 프로젝트에 적용했습니다.
+
+<br />
+
+---
+
+<br />
+
 ### X-XSS-Protection header
 
 - X-XSS-Protection HTTP 헤더는 XSS 공격을 감지 했을 때 브라우저가 페이지 로드를 중지하도록 하는 헤더입니다. 최신 브라우저에서는 Inline Javascript 사용을 못하게 하는 CSP (Content-Security-Policy) 보호기능이 있는데, 해당 기능을 지원하지 않는 구형 웹브라우저에서 사용자를 보호 할수 있는 기능을 제공할 수 있습니다.
@@ -49,6 +57,7 @@
 <br />
 
 - Reference
+  - [next.config.js Options: headers](https://nextjs.org/docs/pages/api-reference/next-config-js/headers)
   - [X-XSS-Protection - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection)
   - [X-Frame-Options - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
   - [Strict-Transport-Security - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security)

@@ -1,5 +1,13 @@
 # Strict-Transport-Security header
 
+- HTTP Security Header를 적용한 PR을 만들었는데, 셀의 한 개발자 분께서 아주 좋은 질문을 주셨습니다. 'Strict-Transport-Security가 하는 HTTPS로의 전환은 AWS에서 해주고 있는데 이 헤더를 세팅해야하는 이유가 뭐냐?' 라는 질문이었습니다. 아차 싶어서 이것에 대해 좀 조사를 해보았습니다.
+
+<br />
+
+---
+
+<br />
+
 - Strict-Transport-Security 헤더는 해당 사이트가 HTTPS를 통해서만 접근되어야 하며 향후 HTTP를 사용하여 사이트에 접근하려는 모든 시도는 자동으로 HTTPS로 변환되어야 함을 브라우저에 알리는데 사용됩니다.
 - The Strict-Transport-Security header is used to inform the browser that the site should only be accessed via HTTPS, and any attempts to access the site using HTTP in the future should automatically be converted to HTTPS.
 

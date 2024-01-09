@@ -1,13 +1,15 @@
 # Git Merge Strategy
 
-- 빗 버킷에서 머지 버튼을 클릭할 경우 나오는 모달에는 아래와 같이 세 가지의 Merge strategy 옵션이 있습니다.
+- 빗 버킷에서 머지 버튼을 클릭할 경우 나오는 모달에는 아래와 같이 세 가지의 Merge strategy 옵션이 있습니다. 셀장님께서 처음에 설정하신 방식을 그냥 사용하고 있었습니다. (Sync now는 3 way merge 방식의 머지를 사용하고, develop으로의 머지는 Fast forward merge 방식을 사용하는 방식.) 일하고 있는데 갑자기 이것에 대한 궁금증이 들어서 좀 조사를 해보았습니다.
 
 <br />
 
 <img src="https://github.com/muilyang12/what_i_studied/assets/78548830/e8c8dd6d-674e-41a9-9bda-0dad98275e71" width=750 />
 
 <br />
-<br />
+
+---
+
 <br />
 
 - Fast forward merge 방식
